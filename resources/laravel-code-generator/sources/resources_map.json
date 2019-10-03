@@ -1,0 +1,277 @@
+[
+    {
+        "model-name": "hocky",
+        "resource-file": "hockies.json",
+        "table-name": "hocky"
+    },
+    {
+        "model-name": "tongiao",
+        "resource-file": "tongiaos.json",
+        "table-name": "tongiao"
+    },
+    {
+        "model-name": "dantoc",
+        "resource-file": "dantocs.json",
+        "table-name": "dantoc"
+    },
+    {
+        "model-name": "tinh_thanhpho",
+        "resource-file": "tinh_thanhphos.json",
+        "table-name": "tinh_thanhpho"
+    },
+    {
+        "model-name": "quan_huyen",
+        "resource-file": "quan_huyens.json",
+        "table-name": "quan_huyen"
+    },
+    {
+        "model-name": "phuong_xa",
+        "resource-file": "phuong_xas.json",
+        "table-name": "phuong_xa"
+    },
+    {
+        "model-name": "chucvu_dv",
+        "resource-file": "chucvu_dvs.json",
+        "table-name": "chucvu_dv"
+    },
+    {
+        "model-name": "thanhtich",
+        "resource-file": "thanhtiches.json",
+        "table-name": "thanhtich"
+    },
+    {
+        "model-name": "khoa",
+        "resource-file": "khoas.json",
+        "table-name": "khoa"
+    },
+    {
+        "model-name": "loai_pt",
+        "resource-file": "loai_pts.json",
+        "table-name": "loai_pt"
+    },
+    {
+        "model-name": "loai_dp_chi",
+        "resource-file": "loai_dp_chis.json",
+        "table-name": "loai_dp_chi"
+    },
+    {
+        "model-name": "xeploai_dk",
+        "resource-file": "xeploai_dks.json",
+        "table-name": "xeploai_dk"
+    },
+    {
+        "model-name": "xeploai_cd",
+        "resource-file": "xeploai_cds.json",
+        "table-name": "xeploai_cd"
+    },
+    {
+        "model-name": "loai_ktkl",
+        "resource-file": "loai_ktkls.json",
+        "table-name": "loai_ktkl"
+    },
+    {
+        "model-name": "hinhthuc_ktkl",
+        "resource-file": "hinhthuc_ktkls.json",
+        "table-name": "hinhthuc_ktkl"
+    },
+    {
+        "model-name": "dv_ketnap",
+        "resource-file": "dv_ketnaps.json",
+        "table-name": "dv_ketnap"
+    },
+    {
+        "model-name": "dv_tt_doan",
+        "resource-file": "dv_tt_doans.json",
+        "table-name": "dv_tt_doan"
+    },
+    {
+        "model-name": "khenthuong_kyluat",
+        "resource-file": "khenthuong_kyluats.json",
+        "table-name": "khenthuong_kyluat"
+    },
+    {
+        "model-name": "xeploai_dv",
+        "resource-file": "xeploai_dvs.json",
+        "table-name": "xeploai_dv"
+    },
+    {
+        "model-name": "phieudanhgia_chidoan",
+        "resource-file": "phieudanhgia_chidoans.json",
+        "table-name": "phieudanhgia_chidoan"
+    },
+    {
+        "model-name": "chitiet_pdg_cd",
+        "resource-file": "chitiet_pdg_cds.json",
+        "table-name": "chitiet_pdg_cd"
+    },
+    {
+        "model-name": "phieudanhgia_doankhoa",
+        "resource-file": "phieudanhgia_doankhoas.json",
+        "table-name": "phieudanhgia_doankhoa"
+    },
+    {
+        "model-name": "chitiet_pdg_dk",
+        "resource-file": "chitiet_pdg_dks.json",
+        "table-name": "chitiet_pdg_dk"
+    },
+    {
+        "model-name": "doankhoa",
+        "resource-file": "doankhoas.json",
+        "table-name": "doankhoa"
+    },
+    {
+        "model-name": "doanphi_chi_cd",
+        "resource-file": "doanphi_chi_cds.json",
+        "table-name": "doanphi_chi_cd"
+    },
+    {
+        "model-name": "doanphi_chi_dk",
+        "resource-file": "doanphi_chi_dks.json",
+        "table-name": "doanphi_chi_dk"
+    },
+    {
+        "model-name": "chidoan",
+        "resource-file": "chidoans.json",
+        "table-name": "chidoan"
+    },
+    {
+        "model-name": "doanvien_thanhnien",
+        "resource-file": "doanvien_thanhniens.json",
+        "table-name": "doanvien_thanhnien"
+    },
+    {
+        "model-name": "vaitro",
+        "resource-file": "vaitros.json",
+        "table-name": "vaitro"
+    },
+    {
+        "model-name": "ct_chucvu_dv",
+        "resource-file": "ct_chucvu_dvs.json",
+        "table-name": "ct_chucvu_dv"
+    },
+    {
+        "model-name": "chitiet_ktkl",
+        "resource-file": "chitiet_ktkls.json",
+        "table-name": "chitiet_ktkl"
+    },
+    {
+        "model-name": "qd_dv_ttdoan",
+        "resource-file": "qd_dv_ttdoans.json",
+        "table-name": "qd_dv_ttdoan"
+    },
+    {
+        "model-name": "qd_dv_ketnap",
+        "resource-file": "qd_dv_ketnaps.json",
+        "table-name": "qd_dv_ketnap"
+    },
+    {
+        "model-name": "pt_doankhoa",
+        "resource-file": "pt_doankhoas.json",
+        "table-name": "pt_doankhoa"
+    },
+    {
+        "model-name": "thanhtich_thamgia",
+        "resource-file": "thanhtich_thamgias.json",
+        "table-name": "thanhtich_thamgia"
+    },
+    {
+        "model-name": "phieubau_uutu",
+        "resource-file": "phieubau_uutus.json",
+        "table-name": "phieubau_uutu"
+    },
+    {
+        "model-name": "chitiet_bau_ut",
+        "resource-file": "chitiet_bau_uts.json",
+        "table-name": "chitiet_bau_ut"
+    },
+    {
+        "model-name": "doanphi_thu_cd",
+        "resource-file": "doanphi_thu_cds.json",
+        "table-name": "doanphi_thu_cd"
+    },
+    {
+        "model-name": "doanphi_thu_dk",
+        "resource-file": "doanphi_thu_dks.json",
+        "table-name": "doanphi_thu_dk"
+    },
+    {
+        "model-name": "doanphi_thu_dv",
+        "resource-file": "doanphi_thu_dvs.json",
+        "table-name": "doanphi_thu_dv"
+    },
+    {
+        "model-name": "pt_chidoan",
+        "resource-file": "pt_chidoans.json",
+        "table-name": "pt_chidoan"
+    },
+    {
+        "model-name": "namhoc",
+        "resource-file": "namhocs.json",
+        "table-name": "namhoc"
+    },
+    {
+        "model-name": "thangnam",
+        "resource-file": "thangnams.json",
+        "table-name": "thangnam"
+    },
+    {
+        "model-name": "sinhvien",
+        "resource-file": "sinhviens.json",
+        "table-name": "sinhvien"
+    },
+    {
+        "model-name": "doanphithu",
+        "resource-file": "doanphithus.json",
+        "table-name": "doanphithu"
+    },
+    {
+        "model-name": "phieudanhgia_doanvien",
+        "resource-file": "phieudanhgia_doanviens.json",
+        "table-name": "phieudanhgia_doanvien"
+    },
+    {
+        "model-name": "chitiet_pdg_dv",
+        "resource-file": "chitiet_pdg_dvs.json",
+        "table-name": "chitiet_pdg_dv"
+    },
+    {
+        "model-name": "mauphieu",
+        "resource-file": "mauphieus.json",
+        "table-name": "mauphieu"
+    },
+    {
+        "model-name": "kieu_dulieu",
+        "resource-file": "kieu_dulieus.json",
+        "table-name": "kieu_dulieu"
+    },
+    {
+        "model-name": "loai_noidung_pdg",
+        "resource-file": "loai_noidung_pdgs.json",
+        "table-name": "loai_noidung_pdg"
+    },
+    {
+        "model-name": "chitiet_mauphieu",
+        "resource-file": "chitiet_mauphieus.json",
+        "table-name": "chitiet_mauphieu"
+    },
+    {
+        "model-name": "xeploai_sv",
+        "resource-file": "xeploai_svs.json",
+        "table-name": "xeploai_sv"
+    },
+    {
+        "model-name": "phieudanhgia_sinhvien",
+        "resource-file": "phieudanhgia_sinhviens.json",
+        "table-name": "phieudanhgia_sinhvien"
+    },
+    {
+        "model-name": "chitiet_pdg_sv",
+        "resource-file": "chitiet_pdg_svs.json",
+        "table-name": "chitiet_pdg_sv"
+    },
+    {
+        "model-name": "noidung_pdg",
+        "resource-file": "noidung_pdgs.json",
+        "table-name": "noidung_pdg"
+    }
+]
