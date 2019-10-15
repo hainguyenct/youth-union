@@ -33,10 +33,10 @@ class PhieudanhgiaSinhviensController extends Controller
      */
     public function create()
     {
-        $Mauphieus = Mauphieu::pluck('TEN_MP','ID')->all();
-$nAMHOCs = NAMHOC::pluck('namhoc','id')->all();
-$Sinhviens = Sinhvien::pluck('mssv','id')->all();
-$xEPLOAISVs = XEPLOAISV::pluck('id','id')->all();
+        $Mauphieus = mauphieu::pluck('TEN_MP','ID')->all();
+        $nAMHOCs = namhoc::pluck('namhoc','id')->all();
+        $Sinhviens = sinhvien::pluck('mssv','id')->all();
+        $xEPLOAISVs = xeploai_sv::pluck('id','id')->all();
         
         return view('phieudanhgia_sinhviens.create', compact('Mauphieus','nAMHOCs','Sinhviens','xEPLOAISVs'));
     }
@@ -51,17 +51,17 @@ $xEPLOAISVs = XEPLOAISV::pluck('id','id')->all();
     public function store(Request $request)
     {
         try {
-            
+
             $data = $this->getData($request);
             
             phieudanhgia_sinhvien::create($data);
 
             return redirect()->route('phieudanhgia_sinhviens.phieudanhgia_sinhvien.index')
-                ->with('success_message', 'Phieudanhgia Sinhvien was successfully added.');
+            ->with('success_message', 'Phieudanhgia Sinhvien was successfully added.');
         } catch (Exception $exception) {
 
             return back()->withInput()
-                ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
+            ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
         }
     }
 
@@ -90,9 +90,9 @@ $xEPLOAISVs = XEPLOAISV::pluck('id','id')->all();
     {
         $phieudanhgiaSinhvien = phieudanhgia_sinhvien::findOrFail($id);
         $Mauphieus = mauphieu::pluck('TEN_MP','ID')->all();
-$nAMHOCs = namhoc::pluck('namhoc','id')->all();
-$Sinhviens = sinhvien::pluck('mssv','id')->all();
-$xEPLOAISVs = xeploai_sv::pluck('id','id')->all();
+        $nAMHOCs = namhoc::pluck('namhoc','id')->all();
+        $Sinhviens = sinhvien::pluck('mssv','id')->all();
+        $xEPLOAISVs = xeploai_sv::pluck('id','id')->all();
 
         return view('phieudanhgia_sinhviens.edit', compact('phieudanhgiaSinhvien','Mauphieus','nAMHOCs','Sinhviens','xEPLOAISVs'));
     }
@@ -108,18 +108,18 @@ $xEPLOAISVs = xeploai_sv::pluck('id','id')->all();
     public function update($id, Request $request)
     {
         try {
-            
+
             $data = $this->getData($request);
             
             $phieudanhgiaSinhvien = phieudanhgia_sinhvien::findOrFail($id);
             $phieudanhgiaSinhvien->update($data);
 
             return redirect()->route('phieudanhgia_sinhviens.phieudanhgia_sinhvien.index')
-                ->with('success_message', 'Phieudanhgia Sinhvien was successfully updated.');
+            ->with('success_message', 'Phieudanhgia Sinhvien was successfully updated.');
         } catch (Exception $exception) {
 
             return back()->withInput()
-                ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
+            ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
         }        
     }
 
@@ -137,11 +137,11 @@ $xEPLOAISVs = xeploai_sv::pluck('id','id')->all();
             $phieudanhgiaSinhvien->delete();
 
             return redirect()->route('phieudanhgia_sinhviens.phieudanhgia_sinhvien.index')
-                ->with('success_message', 'Phieudanhgia Sinhvien was successfully deleted.');
+            ->with('success_message', 'Phieudanhgia Sinhvien was successfully deleted.');
         } catch (Exception $exception) {
 
             return back()->withInput()
-                ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
+            ->withErrors(['unexpected_error' => 'Unexpected error occurred while trying to process your request.']);
         }
     }
 
@@ -155,7 +155,7 @@ $xEPLOAISVs = xeploai_sv::pluck('id','id')->all();
     protected function getData(Request $request)
     {
         $rules = [
-                'MAUPHIEU_ID' => 'required',
+            'MAUPHIEU_ID' => 'required',
             'NAMHOC_ID' => 'required',
             'SINHVIEN_ID' => 'required',
             'XEPLOAI_SV_ID' => 'required',

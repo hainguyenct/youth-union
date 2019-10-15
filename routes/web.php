@@ -1029,8 +1029,12 @@ Route::get('/form(nhap)', function () {
 //create_mau_phieu
 
 Route::get('/create_mau_phieu', 'createmauphieuController@index')->name('createmauphieu_index');
-Route::post('/create_mau_phieu/update', 'createmauphieuController@update')->name('createmauphieu_update');
-Route::get('/create_mau_phieu/create_chitiet_mauphieu', 'doanphiController@create_chitiet_mauphieu')->name('create_chitiet_mauphieu');
+Route::post('/create_mau_phieu/store', 'createmauphieuController@store')->name('createmauphieu_create');
+Route::get('/update_mau_phieu/{id}/edit', 'createmauphieuController@edit')->name('createmauphieu_edit');
+Route::get('/show_chitiet_mauphieu', 'createmauphieuController@show_chitiet_mauphieu')->name('show_chitiet_mauphieu');
+
+Route::get('/phieudanhgia', 'createmauphieuController@mauphieuform')->name('mauphieuform_index');
+
 
 Route::group([
     'prefix' => 'kieu_dulieus',
@@ -1107,3 +1111,8 @@ Route::group([
     Route::delete('/chitiet_pdg_sv/{chitietPdgSv}','ChitietPdgSvsController@destroy')
          ->name('chitiet_pdg_svs.chitiet_pdg_sv.destroy')->where('id', '[0-9]+');
 });
+
+
+
+Route::get('/add_pdg','danhgiasinhvienController@add_pdg')->name('danhgia_sinhvien.add_pdg');
+Route::get('/create/{id}', 'danhgiasinhvienController@create')->name('danhgia_sinhvien.create') ;

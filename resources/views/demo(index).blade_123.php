@@ -58,35 +58,10 @@
       @foreach($sv as $sinhvien)
       <tr>
         <th id="c1" headers="blank">{{$sinhvien->hoten}} - {{$sinhvien->mssv}}</th>
-          <?php $dem=0;?>
+        
         @foreach($dp as $doanphi)
         <td>
-         
-          <?php 
-           $h = '<input type="checkbox" '; 
-          ?>
 
-          <?php
-            foreach($dpt as $doanphithu){
-                if($doanphithu->sinhvien_id == $sinhvien->id && $doanphithu->thangnam_id == $doanphi->id && $doanphithu->dadong == 1){
-                    $h = $h. ' checked ';
-                    $dem = $dem + 1; 
-                    break;
-                }
-
-            }
-
-          ?>
-         <!-- @foreach($dpt as $doanphithu)
-        //  @if($doanphithu->sinhvien_id == $sinhvien->id && $doanphithu->thangnam_id == $doanphi->id && $doanphithu->dadong == 1){
-         // checked
-        //  $dem=$dem+1; }
-        //  @endif
-         // @endforeach
--->
-          <?php $h = $h . 'name="doanphi['.$sinhvien->id.']['. $doanphi->id.']">';
-          echo $h;?>
-<!--
           <input type="checkbox" 
           @foreach($dpt as $doanphithu)
           @if($doanphithu->sinhvien_id == $sinhvien->id && $doanphithu->thangnam_id == $doanphi->id && $doanphithu->dadong == 1)
@@ -94,12 +69,12 @@
           @endif
           @endforeach
           name="doanphi[{{$sinhvien->id}}][{{ $doanphi->id }}]">
--->
+
           <!--               <input type="hidden" name="thangnamdp" value="{{ $doanphi->id }}">   -->
 
         </td>
         @endforeach
-         <td> <?php echo $dem;?>     </td>
+        
       </tr>
       @endforeach
     </tbody>

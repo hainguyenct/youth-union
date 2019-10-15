@@ -31,7 +31,7 @@ class ChitietPdgSvsController extends Controller
      */
     public function create()
     {
-        $PhieudanhgiaSinhviens = PhieudanhgiaSinhvien::pluck('TEN_PDGSV','ID')->all();
+        $PhieudanhgiaSinhviens = phieudanhgia_sinhvien::pluck('TEN_PDGSV','ID')->all();
         $NoidungPdgs = noidung_pdg::pluck('TEN_NDPDG','ID')->all();
         
         return view('chitiet_pdg_svs.create', compact('PhieudanhgiaSinhviens','NoidungPdgs'));

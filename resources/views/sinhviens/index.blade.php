@@ -56,7 +56,7 @@
                             <td>{{ $sinhvien->id }}</td>
                             <td>{{ $sinhvien->mssv }}</td>
                             <td>{{ $sinhvien->hoten }}</td>
-                            <td>{{ $sinhvien->hoten }}</td>
+                            <td>{{ $sinhvien->namsinh }}</td>
 
                             <td>
 

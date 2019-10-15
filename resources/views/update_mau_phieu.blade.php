@@ -49,7 +49,7 @@
   <br>
 
   <div class="panel-body panel-body-with-table">
-    <form method="post" action="{{route('createmauphieu_create')}}" >
+    <form method="post" action="{{route('createmauphieu_update')}}" >
       {!! csrf_field() !!}
       <label class="col-md-2 control-label">Chọn mẫu phiếu</label>
       <div class="col-md-4">
@@ -63,7 +63,7 @@
         </select>
       </div>
       <div class="col-md-2 control-label">
-        <button type='submit' class="btn btn-info"> Liệt kê </button>
+        <button type='submit' class="btn btn-info" href="{{ route('sanpham.edit',['chitiet' => $sanpham->sp_ma]) }}"> Liệt kê </button>
         <!--       <a href="{{route('doanphithu_index')}}"><span> <i class="fa fa-repeat"></i></span></a> -->
       </div>
       <br><br><br>
